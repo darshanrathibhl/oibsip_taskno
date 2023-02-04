@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navbar{
+    display: flex;
+    background-color:rgb(64, 63, 64);
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+.logo{
+    color:  #358000;
+    font-size: xx-large;
+    padding-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo span{
+    color: #007780;
+}
+.nav-items{
+    padding-right: 10px;
+}
+.nav-items > a{
+    text-decoration: solid;
+    color: #358000;
+    gap: 20px;
+    padding-left: 30px;
+    font-weight: bolder   ;
+}
+.nav-items > a:hover{
+    color:red;
+    font-size: large;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(home-bg-img.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+}
+.content{
+    width: 50%;
+    padding-left: 40px;
+}
+.content h1{
+    font-size: 50px;
+}
+.content h1 span{
+    color: rgb(79, 213, 155);
+}
+.content p{
+    font-size: 20px;
+}
+.btn{
+    text-decoration: none;
+    border: solid;
+    border-radius: 15px;
+    font-size: larger;
+    padding: 4px;
+    color: whitesmoke;
+    background-image:linear-gradient(90deg,rgb(28, 109, 3), rgb(164, 233, 36));
+}
+.image{
+    width: 50%;
+}
+.image img{
+    width: 500px;
+    height: 550px;
+    animation: 3s linear infinite;
+}
+@keyframes float {
+    0%,100%{
+        transform:translateY(0rem);
+    }
+    50%{
+        transform:translateY(-3.5rem);
+    }
+}
+
+
+/* #features{
+
+} */
+
+.heading{
+    color: rgb(79, 213, 155);
+    text-align: center;
+    font-size: 40px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 3rem;
+}
+.box-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+.box{
+     background: #fff;
+     flex: 1 1 ;
+     border-radius:0.5rem;
+     border: .1rem solid;
+     margin: 1rem;
+     padding: 3rem 1rem;
+     border-radius: 0.2rem;
+     text-align: center;
+     box-shadow: 0.1rem 0.1rem 5px black;
+     transition: 0.2s linear;
+}
+.box img{
+    height: 170px;
+}
+.box h3{
+      font-size: 25px;
+      color: #007780;
+}
+.box p{
+    font-size: 20px;
+}
+
+
+#about{
+    background: url(about-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    flex: 1 1 40rem;
+}
+.about-content{
+    flex: 1 1 40rem;
+    padding-right: 90px;
+    color: #007780;
+}
+.about-content h3{
+    font-size: 35px;
+}
+.about-content p{
+    font-size: 20px;
+    color: black;
+}
+.btn:hover{
+    font-size: large;
+}
+.new-features{
+    align-items: center;
+    justify-content: center;
+    background: url(subscribe-bg.png);
+    background-position: center;
+    background-size: ccover;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 300px;
+    background-color: #358000;
+}
+.new-features h3{
+    padding-left: 350px;
+    font-size: 40px;
+    color: #04e0f0;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.new-features p{
+    font-size: 20px;
+    margin-top: 2rem,auto;
+}
+.new-features form{
+     display: flex;
+     align-items: center;
+     border: solid;
+     border-radius: 15px;
+     margin: 10px;
+    border-color: #04e0f0;
+
+     padding: 0.5rem;
+}
+.new-features form input[type="e-mail"]{
+    background: none;
+    color: #04e0f0;
+    border: none;
+    border-color: none;
+    font-size: 20px;
+    width: 100%;
+}
+.new-features form input[type="e-mail"]::placeholder{
+    color: #04e0f0;
+    border: none;
+    border-color: none;
+    
+}
+.new-features form input[type="Submit"]{
+    background: #fff;
+    color: rgb(4, 91, 73);
+    border: solid;
+    border-color: none;
+    border-radius: 15px;
+    font-size: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+.new-features form input[type="Submit"]:hover{
+    color: rgb(134, 248, 52);
+}
